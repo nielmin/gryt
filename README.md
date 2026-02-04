@@ -1,6 +1,6 @@
 # gryt
 
-## **G**o **R*SS to **Y**ou**T**ube Converter(?)
+## *G*o *R*SS to *Y*ou*T*ube Converter(?)
 
 ### Description
 
