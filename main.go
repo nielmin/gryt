@@ -35,11 +35,14 @@ func init() {
 	flag.StringVar(&urlFlag, "url", "", "url for a youtube channel")
 }
 
+func convert(browseId string) string {
+	prefix := "https://www.youtube.com/feeds/videos.xml?channel_id="
+	feed := prefix + browseId
+	return feed
+}
+
 func main() {
 	flag.Parse()
 
-	prefix := "https://www.youtube.com/feeds/videos.xml?channel_id="
-	browseId := fetch(urlFlag)
-
-	log.Printf("YT RSS Feed: %s\n", prefix+browseId)
+	log.Printf("YT RSS Feed: %s\n", convert(fetch(urlFlag)))
 }
