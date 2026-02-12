@@ -18,8 +18,8 @@
       perSystem = {pkgs, ...}: {
         devshells.default = {
           packages = with pkgs; [
-            eza
             go
+            gopls
             gotools
             gofumpt
           ];
